@@ -31,7 +31,7 @@
 &lt {
     tapping-term-ms = <240>;
     flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <170>;
 };
 
 / {
@@ -41,8 +41,8 @@
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <135>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -50,11 +50,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        funclayer {
-            bindings = <&mo 3>;
-            key-positions = <33 36>;
-        };
 
         zmk-studio {
             bindings = <&studio_unlock>;
